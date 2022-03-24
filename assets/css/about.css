@@ -1,0 +1,519 @@
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('http://fonts.cdnfonts.com/css/homizio');
+@import"./cards.css";
+/* @import"./animate.css"; */
+@import"./sider.css";
+
+*{
+    box-sizing: border-box;
+    font-family: "Proxima Nova Condensed";
+    scroll-behavior: smooth;
+}
+
+/* **************************************** NAVIGATION BAR*****************************************88 */
+#logo{
+    font-size: 35px;
+}
+
+#navbarSupportedContent{
+    margin-left: 100px;
+}
+
+li{
+    padding-right: 2.8rem;
+}
+
+
+#heart{
+    padding-top: 12px;
+    font-size: 17px;
+    padding-left: 30px;
+    color: gray;
+}
+
+
+#cart{
+    padding-left: 33px;
+    padding-top: 12px;
+    font-size: 17px;
+    color: gray;
+}
+
+
+
+/* ************************************************************** */
+
+
+/* li #activa{
+    border-bottom: 2px solid black;    
+    border-radius: 3px;
+    font-size: larger; 
+    transition: 1s;
+    transform: translateX(2px);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+
+
+
+
+
+li #activa{
+    font-size: 20px;
+    
+}
+
+
+li #activa::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 20px;
+    position: absolute;
+    top: 92%;
+    left: 0px;
+}
+
+
+#nav-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.selectee a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* font-size: 20px; */
+    padding: 10px 0px;
+}
+
+.selectee a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 20px;
+    position: absolute;
+    top: 92%;
+    left: 0px;
+    transition: .5s;
+}
+
+.selectee a:hover::after{
+    width: 100%;
+}
+
+
+
+
+/*********************************IMAGE HEADER************************************/
+#image-header{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../images/shttefan-mtu6m_nLFQI-unsplash.jpg);  
+    background-size: cover;
+    background-color: rgb(138, 135, 135);
+    background-blend-mode: multiply;
+    color: white;
+    transition: 1s ease-in; 
+    margin-bottom: 10%;
+}
+
+#image-header:hover{
+    background-image: url(../images/shttefan-mtu6m_nLFQI-unsplash.jpg);  
+    background-color: white;
+    background-blend-mode: multiply;
+}
+
+
+#image-header p{
+    text-align: center;
+    width: 40%;
+    font-size: 125%;
+}
+
+
+
+
+
+/******************************************SECTION TWO************************************/
+.section-two{
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.section-two h2{
+     margin-top: -13%; 
+    width: 60%;
+    text-align: left;
+    font-size: 213%;
+     max-height: 20vh;
+     margin-bottom: 1.5%; 
+    /* line-height: 40%; */
+
+}
+
+.section-two p{
+    font-size: 122%;
+    line-height: 172%; 
+    width: 60%;
+}
+
+
+
+
+
+
+
+/**********************************************SECTION-THREE******************************/
+#section-three{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    margin-top: -5%;
+    margin-bottom: -12%;    
+}
+
+#section-three .image-three{
+    background-image:url(https://media.istockphoto.com/photos/stack-of-hands-unity-and-teamwork-concept-picture-id1174511028?k=20&m=1174511028&s=612x612&w=0&h=Nx7oN2s0bb9vjV_5VU6uLyhd6LeRVs3dJRSnD5lYXJ0=) ;
+    background-color: rgb(180, 180, 180);
+    background-size: cover;
+    width: 50%;
+    height: 60vh;
+    margin-right: 2%;
+    margin-left: 2%;    
+}
+
+#section-three .text-three{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+
+#section-three .text-three h2{
+    font-size: 132%;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+#section-three .text-three h1{
+    font-size: 179%;
+    padding-bottom: 2%;
+}
+
+
+
+
+
+/*********************************SECTION FOUR**************************************/
+
+#section-four{   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+#section-four .image-four{    
+    background-image:url(https://media.istockphoto.com/photos/freedom-picture-id492081156?k=20&m=492081156&s=612x612&w=0&h=aFmJsbDPaJbePSuF0Ne3lKLYoGmd176fPwQsydDoKX4=) ;
+    background-color: rgb(180, 180, 180);
+    background-size: cover;
+    width: 50%;
+    height: 60vh;
+    margin-right: 2%;
+    margin-left: 2%;    
+}
+
+#section-four .text-four{
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2%;
+}
+
+#section-four .text-four h2{
+    text-align: left;
+    font-size: 132%;
+    padding-bottom: 2%;
+    position: relative;
+}
+
+#section-four .text-four h1{
+    font-size: 179%;
+    padding-bottom: 2%;
+}
+
+
+
+
+
+
+
+/************************************COLUMNS WORDS AND PICTURE*******************************************/
+.words-picture{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: left;
+}
+
+.words-picture h2{
+    margin-left: -49%;
+    padding-bottom: 3%;
+    font-family: 'Homizio', sans-serif;
+}
+
+.words-picture #picture{
+    background-image: url(https://media.istockphoto.com/photos/leadership-concept-with-paper-airplanes-picture-id1132930101?k=20&m=1132930101&s=612x612&w=0&h=GlnmIlE5FfMvk8KDfFj9X4yJKcibnLpbpMw-RhJ8d98=);
+    background-color: rgb(180, 180, 180);
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    margin-left: -10%;
+    margin-bottom: 3%;
+}
+
+.words-picture .column-words{
+    width: 50%;
+    height: auto;
+    text-align: left;
+    margin-left: -10%;
+    font-size:20px ;
+}
+
+
+
+
+/************************************COLUMN TWO WORDS AND PICTURES********************************/
+.wordstwo-picture{
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+    text-align: left;
+    margin-bottom: 10%;
+}
+
+.wordstwo-picture h2{
+    margin-left: -49%;
+    padding-bottom: 3%;
+    font-family: 'Homizio', sans-serif;
+ }
+
+.wordstwo-picture #picturetwo{
+    background-image: url(../images/https://media.istockphoto.com/photos/water-butterfly-the-birth-of-the-life-picture-id1164797589?k=20&m=1164797589&s=612x612&w=0&h=M9omf91rPSOe71-7zUiKjMKJzw6NpEXQnlay9yzYOJA=);
+    background-color: rgb(180, 180, 180);
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    margin-left: -10%;
+    margin-bottom: 0px;
+}
+
+.wordstwo-picture .columntwo-words{
+    margin-top: 2%;
+    width: 50%;
+    height: auto;
+    text-align: left;
+    margin-left: -10%;
+    font-size:20px ;
+}
+
+
+#icons{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ******************************************FOOTER SECTION******************************************************/
+.wrapper{
+    position: relative;
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Homizio', sans-serif;
+    flex-direction: column;
+}
+
+.wrapper .links{
+    color: rgb(180, 180, 180);
+    /* margin-top: 5rem; */
+    font-size: 75%;
+    text-decoration: none;
+}
+
+.wrapper .links:hover{
+    color: white;
+}
+
+.wrapper .border{
+    width: 71%;
+    background-color: white;
+    height: .2vh;
+    border-radius: 3px;
+    margin-bottom: 0%;
+    margin-top: 7%;
+}
+
+.footer-wrapper{
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+    width: 70%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, .3fr);
+    grid-row-gap: 8%;
+    padding-bottom: 12%;
+}
+
+.hed a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 83%;
+    font-family: 'Homizio', sans-serif;
+
+}
+
+
+.location{
+    display: flex; 
+    width: 100%;
+     height: 10vh; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 85%;    
+    text-align: center;
+}
+ 
+
+
+#span{
+    border-right: 2px solid white;
+    padding-left: 2px;
+    margin-right: 3px;
+}
+
+
+/********************************************MEDIA QUERIES [TABLETS]**********************************/
+@media screen and (min-width:700px)  and (max-width:991px){
+
+    .wrapper .border{
+        width: 71%;
+        margin-bottom: -20%;
+        height: .2%;
+    }
+
+    .footer-wrapper{
+        margin-top: 20%;
+        position: relative;
+        width: 70%;
+        padding-top: 5%;       
+    }
+
+    
+    .location{
+     height: 1vh;
+    margin-bottom: -5%;
+    }
+
+
+
+
+
+    .section-two{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+    
+    .section-two h2{
+         margin-top: -13%; 
+        width: 60%;
+        text-align: left;
+        font-size: 200%;
+         max-height: 20vh;
+         margin-bottom: 1.5%; 
+        /* line-height: 40%; */
+    
+    }
+    
+    .section-two p{
+        font-size: 110%;
+        line-height: 152%; 
+        width: 60%;
+    }
+
+    #image-header p{
+        text-align: center;
+        width: 75%;
+        font-size: 115%;
+    }
+
+    #section-three .text-three h1{
+        font-size: 159%;
+        padding-bottom: 2%;
+    }
+    
+    #section-four .text-four h1{
+        font-size: 159%;
+        padding-bottom: 2%;
+    }
+}
+@media screen and (min-width:360px)  and (max-width:480px){
+    
+}

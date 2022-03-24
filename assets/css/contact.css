@@ -1,0 +1,404 @@
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-condensed');
+@import url('http://fonts.cdnfonts.com/css/homizio');
+@import"./cards.css";
+@import"./animate.css";
+@import"./sider.css";
+
+
+*{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "Proxima Nova Condensed";
+    
+}
+
+/* **************************************** NAVIGATION BAR*****************************************88 */
+#logo{
+    font-size: 35px;
+}
+
+#navbarSupportedContent{
+    margin-left: 100px;
+}
+
+li{
+    padding-right: 2.8rem;
+}
+
+
+#heart{
+    padding-top: 12px;
+    font-size: 17px;
+    padding-left: 30px;
+    color: gray;
+}
+
+
+#cart{
+    padding-left: 33px;
+    padding-top: 12px;
+    font-size: 17px;
+    color: gray;
+}
+
+
+
+
+
+
+
+/* ********************************************************************** */
+
+
+li #activa{
+    font-size: 20px;
+    
+}
+
+
+li #activa::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 20px;
+    position: absolute;
+    top: 92%;
+    left: 0px;
+}
+
+
+
+#nav-content{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.selectee a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    /* font-size: 20px; */
+    padding: 10px 0px;
+}
+
+.selectee a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: rgb(49, 48, 48);
+    border-radius: 20px;
+    position: absolute;
+    top: 92%;
+    left: 0px;
+    transition: .5s;
+}
+
+.selectee a:hover::after{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/**********************************************CONTACT US IMAGE*********************************************/
+.imager{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(https://media.istockphoto.com/photos/contact-us-medical-touchscreen-concept-picture-id1316848283?b=1&k=20&m=1316848283&s=170667a&w=0&h=OY2oSj5HuDjN4JGra55cj5xqmrSQZo3GWlHJ4kwRsQc=);
+    background-size: cover;
+    width: 99.5%;
+    height: 50vh;
+    margin-bottom: 4%;
+    flex-direction: column;
+    color: red;
+    margin-left: .3%;
+    position: relative;
+}
+
+.imager .holder{
+    position: absolute;
+    top: 70%;
+    left:5%;
+}
+
+
+
+
+/**************************************OUR LOCATION*****************************************88*/
+#locator{
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+#locator h2{
+    font-family: 'Homizio', sans-serif;
+}
+
+#locator iframe{
+    width: 80%;
+    height: 70vh;
+}
+
+
+/***************************************FEEDBACK/CONTACT US*********************************************************/
+.feedback{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    flex-direction: row;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.feedback h3{
+    margin-bottom: 5%;
+    font-family: 'Homizio', sans-serif;
+}
+
+.feedback #former{
+    width: 100%;
+    margin-left: 10%;
+}
+
+form .wide{
+    width: 77%;
+}
+
+.feedback #contact{
+    margin-top: .001%;
+    width: 58%;
+    margin-right: 10%;
+
+}
+
+.feedback #contact h3{
+    margin-bottom: 7%;
+    position: relative;
+    font-family: 'Homizio', sans-serif;
+}
+
+#para{
+    margin-top: 10%;
+}
+
+.about{
+    bottom: 1%;
+    position: absolute;
+    
+    margin-top: 22%;
+    text-align: center;
+    width: 20%;
+    border: 3px solid rgba(92, 91, 91, 0.781);
+    padding: .6% .1%;
+    font-size: 126%;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+    background-color: transparent;
+}
+.about:hover{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#icons{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* ******************************************FOOTER SECTION******************************************************/
+
+
+.wrapper{
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    width: 100%;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Homizio', sans-serif;
+    flex-direction: column;
+}
+
+.wrapper .links{
+    color: rgb(180, 180, 180);
+    /* margin-top: 5rem; */
+    font-size: 75%;
+    text-decoration: none;
+}
+
+.wrapper .links:hover{
+    color: white;
+}
+
+.wrapper .border{
+    width: 71%;
+    background-color: white;
+    height: .2vh;
+    border-radius: 3px;
+    margin-bottom: 0%;
+    margin-top: 7%;
+}
+
+.footer-wrapper{
+    text-align: center;
+    margin-top: 0px;
+    position: relative;
+    width: 70%;
+    padding-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(5, .3fr);
+    grid-row-gap: 8%;
+    padding-bottom: 12%;
+}
+
+.hed a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 83%;
+    font-family: 'Homizio', sans-serif;
+}
+
+
+.location{
+    display: flex; 
+    width: 100%;
+     height: 10vh; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 85%;    
+    text-align: center;
+}
+ 
+
+
+#span{
+    border-right: 2px solid white;
+    padding-left: 2px;
+    margin-right: 3px;
+}
+
+
+
+/********************************************MEDIA QUERIES [TABLETS]**********************************/
+@media screen and (min-width:360px)  and (max-width:991px){
+
+    .wrapper .border{
+        width: 71%;
+        margin-bottom: -20%;
+        height: .2%;
+    }
+
+    .footer-wrapper{
+        margin-top: 20%;
+        position: relative;
+        width: 70%;
+        padding-top: 5%;       
+    }
+
+    
+    .location{
+     height: 1vh;
+    margin-bottom: -5%;
+    }
+
+
+    .gaa{
+        width:50%;
+    }
+
+    .feedback{
+        
+        display: flex;
+        width: 75%;
+        height: 100vh;
+        flex-direction: column;
+        margin: 5% 5% 5% 9%;
+        
+    }
+    .feedback #former{
+        width: 100%;
+        margin-left: 10%;
+        position: relative;
+        bottom: 7%;
+    }
+
+    .about{
+        top: 70%;
+        position: absolute;
+        /* margin-top: 70%; */
+        margin-bottom: 40%;
+        text-align: center;
+        width: 20%;
+        height: 5vh;
+        padding: .2% .5%;
+        font-size: 119%;
+    }
+
+    #area-two, #area-one, #area-three{
+        display: none;
+    }
+
+   .feedback #former{
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 30%;
+
+    }
+
+    .wrapper{
+    margin-top: 30%;
+    }
+
+    #locator iframe{
+        width: 75%;
+        height: 70vh;
+    }
+
+    #icons{
+        
+        display: none;
+    }
+
+    .feedback #contact{
+        margin-top: -20%;
+        width: 100%;
+        margin-right: 0%;
+        margin-left: 4%;
+    }
+    
+    .feedback #contact h3{
+        margin-bottom: 5%;
+        position: relative;
+        font-family: 'Homizio', sans-serif;
+    }
+    
+}
