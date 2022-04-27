@@ -323,7 +323,12 @@ a{
     margin-right: 3px;
 }
 
-
+.accordion{
+    width: 100%;
+    padding: 0px;
+    display: none;
+    /* margin-top: 100%; */
+}
 
 /********************************************MEDIA QUERIES [TABLETS]**********************************/
 @media screen and (min-width:700px)  and (max-width:991px){
@@ -335,10 +340,11 @@ a{
     }
 
     .footer-wrapper{
-        margin-top: 20%;
+        margin-top: 30%;
         position: relative;
         width: 70%;
-        padding-top: 5%;       
+        padding-top: 5%; 
+        margin-left: -3%;      
     }
 
     
@@ -369,5 +375,58 @@ a{
 }
 
 @media screen and (min-width:360px)  and (max-width:480px){
-    
+    .about{
+        width: 25%;
+    }
+
+    .welcome{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:340px)  and (max-width:500px){
+
+    .accordion-item{
+        margin-top: -30%;
+    }
+
+    .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
+        width: 100%;
+        padding: 0px;
+        display: block;
+        background-color: black;
+    }
+
+
+    .accordion-body p a{
+        color: white;  
+        padding-left:4%;
+        padding: 2%; 
+    }
+
+    .accordion-button{
+        padding: 2%;
+    }
+
+    .accordion{
+        margin-top: 60%;
+        /* height: 40vh; */
+    }
+
+    .wrapper{
+        display: none;
+    }
+
+    .wrapper .links{
+        color: white;
+        font-size: 75%;
+        text-decoration: none;
+        z-index: 39999;
+    }
+    .hed a, .hed{
+        color:rgb(163, 163, 163);
+        font-size: 14px;
+        font-family: 'Homizio', sans-serif;
+
+    }
 }

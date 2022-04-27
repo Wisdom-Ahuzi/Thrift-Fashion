@@ -444,9 +444,16 @@ li #activa::after{
     margin-right: 3px;
 }
 
+.accordion{
+    width: 100%;
+    padding: 0px;
+    display: none;
+    /* margin-top: 100%; */
+}
+
 
 /********************************************MEDIA QUERIES [TABLETS]**********************************/
-@media screen and (min-width:700px)  and (max-width:991px){
+@media screen and (min-width:500px)  and (max-width:991px){
 
     .wrapper .border{
         width: 71%;
@@ -514,6 +521,100 @@ li #activa::after{
         padding-bottom: 2%;
     }
 }
-@media screen and (min-width:360px)  and (max-width:480px){
+@media screen and (min-width:360px)  and (max-width:599px){
+    #purpose{
+        margin-top: 20%;
     
+    }
+
+    
+    #section-three .image-three,#section-three .text-three{
+        height: 40vh;
+        width: inherit;
+        margin-bottom: -30%;
+    }
+
+
+    #section-four .image-four,#section-four .text-four{
+        margin-top: -30%;
+        height: 40vh;
+        width: inherit;
+    }
+
+  
+
+    #picturetwo{
+        height: 60vh;
+    }
+
+
+    .section-two{
+       height: 100vh;
+       margin: 0px;
+    }
+
+    #about #diff{
+        display: none;
+    }
+
+    #image-header h3, #image-header p{
+        display: none;
+    }
+
+    #image-header{
+        height: 50vh;
+    }
+  
+}
+
+@media screen and (min-width:340px)  and (max-width:500px){
+
+    .accordion-item{
+        margin-top: 10%;
+    }
+
+    .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
+        width: 100%;
+        padding: 0px;
+        display: block;
+        background-color: black;
+    }
+
+    /* .accordion-item{
+        padding-bottom: 30%;
+    } */
+
+    .accordion-body p a{
+        color: white;  
+        padding-left:4%;
+        padding: 2%; 
+    }
+
+    .accordion-button{
+        padding: 2%;
+    }
+
+    .accordion{
+        height: 33vh;
+
+    }
+
+    .wrapper{
+        display: none;
+    }
+
+    .wrapper .links{
+        color: white;
+        /* margin-top: 5rem; */
+        font-size: 75%;
+        text-decoration: none;
+        z-index: 39999;
+    }
+    .hed a, .hed{
+        /* background-color: black; */
+        color:rgb(163, 163, 163);
+        font-size: 14px;
+    font-family: 'Homizio', sans-serif;
+
+    }
 }

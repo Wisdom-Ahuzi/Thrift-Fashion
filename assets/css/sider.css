@@ -22,7 +22,6 @@
     background: white;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) ;
     transition: .4s;
-
 }
 .dropdown-inner > ul.dropdown-items{
     list-style-type: none;
@@ -59,8 +58,6 @@
 
 
 /* *************************************************CATEGORIES******************************* */
-
-
 
 .categories{
     width: 10vw;
@@ -115,38 +112,30 @@
 
 
 
-@media screen and (min-width:500px)  and (max-width:991px){
-    .categories-toggler{
-        position: fixed;
-        z-index: 30;
-        height: 2.2rem;
-        width: 2.2rem;
-        border: none;
-        border-radius: 50%;
-        background-color: black;
-        bottom: 20px;
-        right: 20px;
-    }
-
-    .categories-inner{
-        width: 10vw;
-        height: 30vh;
-        position: absolute;
-        background: white;
-        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) ;
-        transition: .4s;
-        left: -100%;
-        
-    }
-
-    .categories{
-        width: 90px;
-        height: 30vh;
-        position: fixed;
-        top: 33%;
-        background: none;
-        z-index: 10;
-        cursor: pointer;
-    }
+@media screen and (min-width:360px)  and (max-width:991px){
     
+h5{
+    display: none;
+}
+.categories-inner{
+    width: 20vw;
+    height: 30vh;
+    position: absolute;
+    background: white;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) ;
+    transition: .4s;
+    left: -200%;
+    
+}
+}
+
+@media screen and (min-width:360px)  and (max-width:700px){
+    .dropdown-inner{
+        width: 24vw;
+    }
+
+    .dropdown{
+        width: 30vw;
+      
+    }
 }

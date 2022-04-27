@@ -434,6 +434,17 @@ a{
 
 
 
+.accordion{
+    width: 100%;
+    padding: 0px;
+    display: none;
+    /* margin-top: 100%; */
+}
+
+
+
+
+
 /********************************************MEDIA QUERIES [TABLETS]**********************************/
 @media screen and (min-width:500px)  and (max-width:991px){
     .text-1 p {
@@ -493,10 +504,15 @@ a{
     }
 
     .footer-wrapper{
-        margin-top: 20%;
+        margin-top: 30%;
         position: relative;
         width: 70%;
-        padding-top: 5%;       
+        padding-top: 5%;  
+        margin-left: 18%;     
+    }
+
+    .wrapper{
+        display: block;
     }
 
     
@@ -538,5 +554,50 @@ a{
 
     .text-2 .about-2{
         margin-top: 12%;
+    }
+
+}
+@media screen and (min-width:340px)  and (max-width:500px){
+
+    .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
+        width: 100%;
+        padding: 0px;
+        display: block;
+        background-color: black;
+    }
+
+
+    .accordion-body p a{
+        color: white;  
+        padding-left:4%;
+        padding: 2%; 
+    }
+
+    .accordion-button{
+        padding: 2%;
+    }
+
+    .accordion{
+        height: 50vh;
+
+    }
+
+    .wrapper{
+        display: none;
+    }
+
+    .wrapper .links{
+        color: white;
+        /* margin-top: 5rem; */
+        font-size: 75%;
+        text-decoration: none;
+        z-index: 39999;
+    }
+    .hed a, .hed{
+        /* background-color: black; */
+        color:rgb(163, 163, 163);
+        font-size: 14px;
+    font-family: 'Homizio', sans-serif;
+
     }
 }
