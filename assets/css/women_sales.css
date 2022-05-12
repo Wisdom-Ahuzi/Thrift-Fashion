@@ -29,11 +29,10 @@
     width: 100%;
     padding: 0px;
     display: none;
-    /* margin-top: 100%; */
 }
 
 
-@media screen and (min-width:340px)  and (max-width:500px){
+@media screen and (min-width:300px)  and (max-width:770px){
 
   
     .accordion-item{
@@ -69,13 +68,11 @@
 
     .wrapper .links{
         color: white;
-        /* margin-top: 5rem; */
         font-size: 75%;
         text-decoration: none;
         z-index: 39999;
     }
     .hed a, .hed{
-        /* background-color: black; */
         color:rgb(163, 163, 163);
         font-size: 14px;
     font-family: 'Homizio', sans-serif;

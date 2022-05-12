@@ -26,7 +26,6 @@ li{
 #heart{
     padding-top: 12px;
     font-size: 17px;
-    /* padding-left: 30px; */
     color: gray;
 }
 
@@ -78,7 +77,6 @@ li #activa::after{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    /* font-size: 20px; */
     padding: 10px 0px;
 }
 
@@ -94,11 +92,6 @@ li #activa::after{
     transition: .5s;
 }
 
-/* .selectee a:hover::after{
-    width: 100%;
-} */
-
-
 /* ******************************************CAROUSEL SLIDER******************************************/
 
  #carasa{
@@ -110,17 +103,11 @@ li #activa::after{
     object-fit: cover;
 } 
 
-
-
-
-
 /* ********************************************CAROUSEL DIVIDER TEXT-------COMPANY CARDS******************************* */
 
 
  .text-1{
-    /* font-weight: bolder; */
-    display: flex;
-    
+    display: flex;    
     width: 100%;
     height: 10vh;
     justify-content: start;
@@ -140,7 +127,6 @@ li #activa::after{
 } 
 
 #text-1{
-    /* margin: 0px 2%; */
     width: 98%;
     margin: 5% 5% 5% 1%;
 
@@ -153,7 +139,6 @@ li #activa::after{
 
 .head{
     width: 98%;
-    /* width: 100%; */
     height: 75vh;
     background-image: url(https://www.adidas.com/dw/image/v2/BFNL_PRD/on/demandware.static/-/Library-Sites-AdidasSharedLibrary/default/dw95a66dee/WelcomeOfferFeb22/ENWELHPB.jpg);
     background-color: rgb(165, 165, 165);
@@ -161,8 +146,6 @@ li #activa::after{
      background-blend-mode: multiply;
      background-size: cover;
      background-position: center;
-    /* margin-bottom: 5%; */
-    /* margin: 0px 7% ; */
     position: relative;
     transition: all 1s ease-in-out;
 }
@@ -193,7 +176,6 @@ li #activa::after{
 h1{
     margin-top: 16%;
     margin-bottom: -8%;
-    /* font-size: 29%; */
     font-family: "Proxima Nova Condensed";
 }
 
@@ -209,7 +191,6 @@ div p{
     padding: .6% 0%;
     font-size: 126%;
     font-family: "Proxima Nova Condensed";
-    /* font-weight: bold; */
     transition: .3s ease-in-out;
     background-color: transparent;
 }
@@ -223,11 +204,6 @@ div p{
     color: black;
 } 
 
-
-
-
-
-
 /* **********************************************TWO CARDS STYLES****************************************** */
 
 
@@ -237,53 +213,26 @@ div p{
     align-items: flex-start;
     width: 100%;
     height: 10vh;
-    /* font-weight: bolder; */
     font-family: "Proxima Nova Condensed";
     font-size: 150rem;
     justify-content: flex-start;
     padding-left: 5%;
-    margin-bottom: -8%;
-    /* margin: 5% 5% -1% 1%; */
-    
+    margin-bottom: -8%;    
 }
 
 .texter-1 p{
     font-size: 1.7rem;
-    /* margin-left: -89%; */
-    /* margin-bottom: -10%; */
-    /* font-size: 2rem; */
     font-family: "Proxima Nova Condensed";
 } 
 
 
 #two-cards{
-    /* margin-top: -3%; */
     width: 98%;
     margin: 2% 5% 1% 1%;
     padding: 3%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* *******************************************IMAGE-2 STYLES************************************/
-
 .image-2{
     width: 98%;
     height: 73vh;
@@ -291,9 +240,6 @@ div p{
      background-blend-mode: multiply;
      background-size: cover;
      background-position: center;
-    /* margin-bottom: 5%;
-    margin-top: 5%; */
-    /* margin: 5% 5%; */
     margin: 5% 5% 5% 1%;
 }
 
@@ -328,7 +274,6 @@ p{
     border: 3px solid rgba(92, 91, 91, 0.781);
     padding: .6% 0%;
     font-size: 126%;
-    /* font-weight: bold; */
     transition: .8s ease-in-out;
     background-color: transparent;
 }
@@ -347,7 +292,6 @@ a{
     margin-left: 1%;
     margin-top: 10%;
 }
-
 
 #text-up{
     margin: 0%;
@@ -371,7 +315,6 @@ a{
 
 .wrapper .links{
     color: rgb(180, 180, 180);
-    /* margin-top: 5rem; */
     font-size: 75%;
     text-decoration: none;
 }
@@ -411,7 +354,6 @@ a{
     font-family: 'Homizio', sans-serif;
 }
 
-
 .location{
     display: flex; 
     width: 100%;
@@ -423,27 +365,17 @@ a{
     text-align: center;
 }
  
-
-
 #span{
     border-right: 2px solid white;
     padding-left: 2px;
     margin-right: 3px;
 }
 
-
-
-
 .accordion{
     width: 100%;
     padding: 0px;
     display: none;
-    /* margin-top: 100%; */
 }
-
-
-
-
 
 /********************************************MEDIA QUERIES [TABLETS]**********************************/
 @media screen and (min-width:500px)  and (max-width:991px){
@@ -452,7 +384,6 @@ a{
         margin-left:0%;
         text-align: center;
     } 
-
     
  .text-1{
     width: 100%;
@@ -490,8 +421,6 @@ a{
       
     }
 
-   
-
     .about-2{
         width: auto;
         padding:.6%;
@@ -523,7 +452,6 @@ a{
     
 }
 
-
 /********************************************MEDIA QUERIES [PHONES]**********************************/
 @media screen and (min-width:360px)  and (max-width:480px){
     .welcome .about{
@@ -540,7 +468,7 @@ a{
         height: 60vh;
     }
 
-    .welcome h1{
+    .welcome h2{
         margin-top: 25%;
     }
 
@@ -555,9 +483,16 @@ a{
     .text-2 .about-2{
         margin-top: 12%;
     }
-
 }
-@media screen and (min-width:340px)  and (max-width:500px){
+
+@media screen and (min-width:481px)  and (max-width:1700px){
+    
+    .welcome h2{
+        margin-top: 19%;
+    }
+}
+
+@media screen and (min-width:300px)  and (max-width:770px){
 
     .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
         width: 100%;
@@ -565,8 +500,6 @@ a{
         display: block;
         background-color: black;
     }
-
-
     .accordion-body p a{
         color: white;  
         padding-left:4%;
@@ -588,16 +521,13 @@ a{
 
     .wrapper .links{
         color: white;
-        /* margin-top: 5rem; */
         font-size: 75%;
         text-decoration: none;
         z-index: 39999;
     }
     .hed a, .hed{
-        /* background-color: black; */
         color:rgb(163, 163, 163);
         font-size: 14px;
-    font-family: 'Homizio', sans-serif;
-
+        font-family: 'Homizio', sans-serif;
     }
 }

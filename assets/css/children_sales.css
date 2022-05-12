@@ -82,7 +82,6 @@ li #activa::after{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    /* font-size: 20px; */
     padding: 10px 0px;
 }
 
@@ -201,13 +200,6 @@ li #activa::after{
     width: 100%;
 }
 
-/* .rowers{
-    width: 50%;
-    height: 25vh;
-} */
-
-
-
 /************************************************SECOND ROW***************************/
 #image-row-two{
     margin-bottom: 3%;
@@ -215,12 +207,6 @@ li #activa::after{
     justify-content: flex-end;
     width: 100%;
 }
-
-/* .rowers-two{
-    width: auto;
-    height: auto;
-} */
-
 
 
 /************************************************THIRD ROW***************************/
@@ -231,26 +217,9 @@ li #activa::after{
     width: 100%;
 }
 
-/* .rowers-three{
-    width: auto;
-    height: auto;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 
 #icons{
     display: flex;
-    /* width: 100%; */
     height: 1vh;
     justify-content: center;
     align-items: center;
@@ -258,10 +227,6 @@ li #activa::after{
     margin-bottom: -7%;
     margin-left: 0%;
 }
-
-
-
-
 /* ******************************************FOOTER SECTION******************************************************/
 
 .wrapper{
@@ -281,7 +246,6 @@ li #activa::after{
 
 .wrapper .links{
     color: rgb(180, 180, 180);
-    /* margin-top: 5rem; */
     font-size: 75%;
     text-decoration: none;
 }
@@ -403,11 +367,10 @@ li #activa::after{
     width: 100%;
     padding: 0px;
     display: none;
-    /* margin-top: 100%; */
 }
 
 
-@media screen and (min-width:340px)  and (max-width:500px){
+@media screen and (min-width:300px)  and (max-width:770px){
 
   
     .accordion-item{
@@ -420,7 +383,6 @@ li #activa::after{
         display: block;
         background-color: black;
     }
-
 
     .accordion-body p a{
         color: white;  
@@ -443,16 +405,13 @@ li #activa::after{
 
     .wrapper .links{
         color: white;
-        /* margin-top: 5rem; */
         font-size: 75%;
         text-decoration: none;
         z-index: 39999;
     }
     .hed a, .hed{
-        /* background-color: black; */
         color:rgb(163, 163, 163);
         font-size: 14px;
-    font-family: 'Homizio', sans-serif;
-
+        font-family: 'Homizio', sans-serif;
     }
 }

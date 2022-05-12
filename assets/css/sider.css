@@ -1,5 +1,3 @@
-
-
 /* ********************************DROP DOWN************************************ */
 .dropdown{
     width: 10vw;
@@ -20,7 +18,7 @@
     height: 20vh;
     position: absolute;
     background: white;
-    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) ;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
     transition: .4s;
 }
 .dropdown-inner > ul.dropdown-items{
@@ -45,18 +43,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* *************************************************CATEGORIES******************************* */
 
 .categories{
@@ -69,7 +55,6 @@
     cursor: pointer;
 }
 
-/* relative z-30 lg:hidden peer h-14 w-14 rounded-full bg-cyan-500 hover:bg-cyan-600 focus:bg-cyan-600 active:bg-cyan-700 transition */
 
 .categories-toggler{
     position: fixed;
@@ -95,9 +80,7 @@
 .left{
     left: 0 !important;
 }
-/* .categories:hover > .categories-inner{
-    left: 0;
-} */
+
 .categories-inner > ul.categories-items{
     list-style-type: none;
     margin: 10px;
@@ -112,14 +95,14 @@
 
 
 
-@media screen and (min-width:360px)  and (max-width:991px){
+@media screen and (min-width:500px)  and (max-width:991px){
     
 h5{
     display: none;
 }
 .categories-inner{
     width: 20vw;
-    height: 30vh;
+    height: 23vh;
     position: absolute;
     background: white;
     box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) ;
@@ -129,13 +112,28 @@ h5{
 }
 }
 
-@media screen and (min-width:360px)  and (max-width:700px){
+@media screen and (min-width:300px)  and (max-width:499.5px){
+
+    h5{
+        display: none;
+    }
+
     .dropdown-inner{
         width: 24vw;
     }
 
     .dropdown{
         width: 30vw;
-      
+    }
+
+    .categories-inner{
+        width: 23vw;
+        height: 23vh;
+        position: absolute;
+        background: white;
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) ;
+        transition: .4s;
+        left: -250%;
+        
     }
 }

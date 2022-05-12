@@ -78,7 +78,6 @@ li #activa::after{
     text-decoration: none;
     color: black;
     font-weight: bold;
-    /* font-size: 20px; */
     padding: 10px 0px;
 }
 
@@ -157,7 +156,6 @@ div p{
     border: 3px solid rgba(92, 91, 91, 0.781);
     padding: .6% 0%;
     font-size: 126%;
-    /* font-weight: bold; */
     transition: .8s ease-in-out;
     background-color: transparent;
 }
@@ -179,12 +177,6 @@ a{
  #image-row{
     margin-bottom: 10%;
 }
-
-/*
-.rowers{
-    width: 50%;
-    height: auto;
-} */
 
 .shops{
     margin-bottom: 2%;
@@ -217,12 +209,6 @@ a{
     margin-bottom: 12%;
 }
 
-
-/*
-.rowers-two{
-    width: 50%;
-    height: auto;
-} */
 
 .shops-two{
     margin-bottom: 2%;
@@ -274,7 +260,6 @@ a{
 
 .wrapper .links{
     color:rgb(180, 180, 180);
-    /* margin-top: 5rem; */
     font-size: 75%;
     text-decoration: none;
 }
@@ -336,7 +321,6 @@ a{
     width: 100%;
     padding: 0px;
     display: none;
-    /* margin-top: 100%; */
 }
 
 
@@ -397,7 +381,7 @@ a{
 }
 
 
-@media screen and (min-width:340px)  and (max-width:500px){
+@media screen and (min-width:300px)  and (max-width:770px){
 
     .accordion-item{
         margin-top: -40%;
@@ -423,7 +407,6 @@ a{
 
     .accordion{
         margin-top: 60%;
-        /* height: 40vh; */
     }
 
     .wrapper{
