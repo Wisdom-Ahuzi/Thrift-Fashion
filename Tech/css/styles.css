@@ -1,0 +1,378 @@
+
+
+*{
+    margin: 0%;
+    padding: 0;
+    /* transition: all .1s ease-in-out; */
+}
+
+
+
+
+
+/* Contact Us Page */
+
+map{
+    margin-top: 3%;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    background-color: slateblue;
+}
+
+map>iframe{
+    width: 90%;
+    height: 100%;
+}
+
+.part{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: springgreen; */
+}
+
+.container{
+    position: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width:100%; */
+    height: 100vh;  
+    /* background-color: saddlebrown;    */
+}
+
+.container::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.contact-box{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color:rgb(187, 184, 184);  */
+    /* box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19); */
+}
+
+.left{
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.right{
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 80%; */
+    /* background-color: slateblue; */
+}
+
+h2{
+    position: relative;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 28px;
+    /* background-color: slateblue; */
+}
+
+.right > p{
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 17px;
+}
+
+
+.field{
+    width: 90%;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border-radius: 5px;
+    /* border: 2px solid rgba(0,0,0,0);
+    background-color: rgba(230,230,230,0.6); */
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+    border-radius: 7px;
+    border: 2px solid rgb(187, 176, 176);
+}
+
+.names{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: saddlebrown; */
+    flex-direction: row;
+
+    width: 90%;
+    /* padding: 0.5rem ; */
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0);
+    /* background-color: rgba(230,230,230,0.6); */
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    /* margin-left: 2%; */
+    transition: .3s;
+}
+
+.names>input{
+    height: 100%;
+    /* width:34%; */
+    padding: 0.6rem ;
+    outline: none;
+    /* background-color: rgba(230,230,230,0.6); */
+    border-radius: 7px;
+    border: 2px solid rgb(187, 176, 176);
+    /* background-color: rgba(230,230,230,0.6); */
+}
+
+.field::placeholder{
+    font-size: 15px;
+}
+
+.field:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+.field:focus{
+    background-color: #fff;
+    border: 2px solid rgba(30,85,250,0.47);
+}
+
+.area{
+    min-height: 150px;
+}
+
+.btn{
+    width: 90%;
+    height: 40px;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: slateblue;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    transition: .3s;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: slateblue; */
+}
+
+.inner-left{
+    /* background-color: saddlebrown; */
+    width: 80%;
+    height: 100%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4%;
+}
+
+.inner-left > h2{
+    text-align: left;
+    font-size: 28px;
+}
+
+.inner-left > div > p{
+    text-align: left;
+    font-size: 18px;
+    line-height: 25px;
+    width: 100%;
+}
+
+.contact-links{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6%;
+}
+
+#phone{
+    width: 20px;
+    height: 20px;
+}
+
+.contact-links > span{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 4%;
+}
+
+.contact-links > span > svg > g {
+    fill: black;
+}
+
+.contact-links > span > a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Footer {
+    margin-top: 100vh;
+    width: 100%;
+    height: 350px;
+    background-color: slateblue;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.inner-footer {
+    height: 50%;
+    padding-top: 8%;
+    width: 85%;
+    /* background-color: saddlebrown; */
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    align-items: flex-start;
+}
+
+.inner-footer>p>svg>path {
+    fill: beige;
+}
+
+.insight {
+    /* background-color: slategray; */
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    height: 100%;
+    /* align-items: center; */
+}
+
+.first-insight,
+.second-insight,
+.third-insight {
+    /* background-color: sandybrown; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+}
+
+.first-insight>p,
+.second-insight>p,
+.third-insight>p {
+    font-size: 20px;
+    color: beige;
+}
+
+.first-insight>.inner-first-insight,
+.second-insight>.inner-second-insight,
+.third-insight>.inner-third-insight {
+    /* background-color: black; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7%;
+    padding-top: 0%;
+}
+
+
+.first-insight>.inner-first-insight>span>a,
+.second-insight>.inner-second-insight>span>a,
+.third-insight>.inner-third-insight>span>a {
+    font-size: 16px;
+    text-decoration: none;
+    color: beige;
+    transition: all .3s ease-in-out;
+}
+
+.first-insight>.inner-first-insight>span>a:hover,
+.second-insight>.inner-second-insight>span>a:hover,
+.third-insight>.inner-third-insight>span>a:hover {
+    color: bisque;
+    font-size: 17px;
+}
+
+.social-handles {
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-handles>span>a>svg>path{
+    transition: all .3s ease-in-out;
+}
+
+.social-handles>span>a>svg>path:hover {
+    fill: skyblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

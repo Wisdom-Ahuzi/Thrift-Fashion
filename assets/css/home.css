@@ -1,96 +1,33 @@
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
-@import url('https://fonts.cdnfonts.com/css/homizio');
-@import url("./sider.css");
-@import url("./home.css");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
 *{
     box-sizing: border-box;
-    font-family: "Proxima Nova Condensed";
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    transition: all .3s ease-in-out;
+    font-family: 'Manrope', sans-serif;
 }
 
-/* **************************************** NAVIGATION BAR*****************************************88 */
-#logo{
-    font-size: 35px;
-   
+.activee{
+    transition: all .3s ease-in-out;
 }
 
-#navbarSupportedContent{
-    margin-left: 100px;
+.activee:hover{
+    color: rgb(213, 79, 79) !important;
 }
 
-li{
-    padding-right: 2.8rem;
+.activee1:hover{
+    color: rgb(213, 79, 79) !important;
 }
 
-
-#heart{
-    padding-top: 12px;
-    font-size: 17px;
-    color: gray;
+.activee2:hover{
+    color: rgb(213, 79, 79) !important;
 }
 
-
-#cart{
-    padding-left: 33px;
-    padding-top: 12px;
-    font-size: 17px;    
-    color: gray;
-    
+.carouselinnertext{
+    font-size: 3rem;
+    font-weight: 500;
 }
 
-
-
-/* ********************************************************************** */
-
-
-li #activa{
-    font-size: 20px;
-    
-}
-
-
-li #activa::after{
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-color: rgb(49, 48, 48);
-    border-radius: 20px;
-    position: absolute;
-    top: 92%;
-    left: 0px;
-}
-
-
-
-#nav-content{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.selectee a{
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 0px;
-}
-
-.selectee a::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background-color: rgb(49, 48, 48);
-    border-radius: 20px;
-    position: absolute;
-    top: 92%;
-    left: 0px;
-    transition: .5s;
-}
 
 /* ******************************************CAROUSEL SLIDER******************************************/
 
@@ -99,7 +36,7 @@ li #activa::after{
 }
 
 .carouselImages {
-    height: 80vh;
+    height: 100vh;
     object-fit: cover;
 } 
 
@@ -122,7 +59,7 @@ li #activa::after{
     font-size: 1.5rem;
     margin-left: 2%;
     margin-bottom: -5%;
-    font-family: 'Homizio', sans-serif;
+    /* : 'Homizio', sans-serif; */
     font-weight: bolder;
 } 
 
@@ -140,7 +77,7 @@ li #activa::after{
 .head{
     width: 98%;
     height: 75vh;
-    background-image: url(https://www.adidas.com/dw/image/v2/BFNL_PRD/on/demandware.static/-/Library-Sites-AdidasSharedLibrary/default/dw95a66dee/WelcomeOfferFeb22/ENWELHPB.jpg);
+    background-image: url(../images/child\ cloth\ 1.jpg);
     background-color: rgb(165, 165, 165);
     margin: 5% 5% 5% 1%;
      background-blend-mode: multiply;
@@ -151,7 +88,6 @@ li #activa::after{
 }
 
 .head:hover{
-    background-image: url(https://www.adidas.com/dw/image/v2/BFNL_PRD/on/demandware.static/-/Library-Sites-AdidasSharedLibrary/default/dw95a66dee/WelcomeOfferFeb22/ENWELHPB.jpg);
     background-color: white;
 
      background-blend-mode: multiply;
@@ -169,14 +105,16 @@ li #activa::after{
     width: 100%;
     height: auto;
     flex-wrap: wrap;
-    padding-top: 5%;
-    margin-top: 18%;
+    padding-top: 0%;
+    margin-top: 0%;
 }
 
-h1{
-    margin-top: 16%;
-    margin-bottom: -8%;
-    font-family: "Proxima Nova Condensed";
+.welcome > h2{
+    margin-top: -10%;
+    margin-bottom: 0%;
+    color: black;
+    font-size:2.5rem;
+
 }
 
 div p{
@@ -190,7 +128,7 @@ div p{
     border: 3px solid rgba(92, 91, 91, 0.781);
     padding: .6% 0%;
     font-size: 126%;
-    font-family: "Proxima Nova Condensed";
+    /* : "Proxima Nova Condensed"; */
     transition: .3s ease-in-out;
     background-color: transparent;
 }
@@ -213,7 +151,7 @@ div p{
     align-items: flex-start;
     width: 100%;
     height: 10vh;
-    font-family: "Proxima Nova Condensed";
+    /* : "Proxima Nova Condensed"; */
     font-size: 150rem;
     justify-content: flex-start;
     padding-left: 5%;
@@ -222,7 +160,7 @@ div p{
 
 .texter-1 p{
     font-size: 1.7rem;
-    font-family: "Proxima Nova Condensed";
+    /* : "Proxima Nova Condensed"; */
 } 
 
 
@@ -234,56 +172,81 @@ div p{
 
 /* *******************************************IMAGE-2 STYLES************************************/
 .image-2{
-    width: 98%;
-    height: 73vh;
     background-color: rgb(241, 241, 241);
-     background-blend-mode: multiply;
-     background-size: cover;
-     background-position: center;
-    margin: 5% 5% 5% 1%;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(128, 109, 90);
+    background-image: url(../images/biel-morro-_l8ZdgJ9m7w-unsplash.jpg);
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0%;
+    margin: auto;
+    margin-bottom: 15% ;
+    margin-top: 5%;
+    width: 98%;
+    min-height: fit-content !important;
+    max-height: 50vh;
+    position: relative;
 }
 
+/* background-image: url(../images/biel-morro-_l8ZdgJ9m7w-unsplash.jpg);
+background-blend-mode: multiply; */
 
 .text-2{
+    height: fit-content;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    flex-wrap: wrap;
+    align-items: flex-start;
     text-align: center; 
-    margin-top: 7%;
+    padding-top: 15%;
+    padding-left: 3%;
+    /* background-color: saddlebrown; */
+    
 }
 
  h2 {
     margin-top: 10%;
     margin-bottom: 2%;
     font-size: 258%;
-    
+    color: white;    
 }
 
-p{
-    font-family: "Proxima Nova Condensed";
-    font-size: 20%;
-    margin-bottom: 20%;
+.text-2 > p{
+    /* border: 1px solid red; */
+    /* : "Proxima Nova Condensed"; */
+    font-size: 17px;
+    /* margin-bottom: 2 0%; */
+    text-align: start;
+    color: white;    
+    width: 50%;
 }
 
-.about-2{
-    width: 12%;
-    border: 3px solid rgba(92, 91, 91, 0.781);
+.text-2 > a{
+    width: fit-content;
+    border: 1px solid rgb(213, 79, 79);
     padding: .6% 0%;
     font-size: 126%;
-    transition: .8s ease-in-out;
+    transition: .3s ease-in-out;
+    color: white;    
+    text-decoration: none;
     background-color: transparent;
+    background-color: rebeccapurple;
+    /* z-index: 4; */
+    position: absolute;
+    bottom: 3;
 }
 .about-2:hover{
     color: white;
-    background-color: gray;
+    background-color: rgb(213, 79, 79);
     cursor: pointer;
 }
-a{   
-    font-family: "Proxima Nova Condensed";
+.text-2 > a{   
+    /* : "Proxima Nova Condensed"; */
     text-decoration: none;
     color: black;
 } 
@@ -298,84 +261,12 @@ a{
 }
 
 
-/* ******************************************FOOTER SECTION******************************************************/
-
-.wrapper{
-    position: relative;
-    background-color: black;
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Homizio', sans-serif;
-    flex-direction: column;
+.diser{
+    pointer-events: none !important;
 }
 
-.wrapper .links{
-    color: rgb(180, 180, 180);
-    font-size: 75%;
-    text-decoration: none;
-}
 
-.wrapper .links:hover{
-    color: white;
-}
 
-.wrapper .border{
-    width: 71%;
-    background-color: white;
-    border-radius: 3px;
-    margin-bottom: 0%;
-    margin-top: 7%;
-    height: .2%;
-
-}
-
-.footer-wrapper{
-    text-align: center;
-    margin-top: 0px;
-    position: relative;
-    width: 70%;
-    padding-top: 3%;
-    display: grid;
-    grid-template-columns: repeat(5, .3fr);
-    grid-row-gap: 8%;
-    padding-bottom: 12%;
-
-}
-
-.hed a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 83%;
-    font-family: 'Homizio', sans-serif;
-}
-
-.location{
-    display: flex; 
-    width: 100%;
-     height: 10vh; 
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 85%;    
-    text-align: center;
-}
- 
-#span{
-    border-right: 2px solid white;
-    padding-left: 2px;
-    margin-right: 3px;
-}
-
-.accordion{
-    width: 100%;
-    padding: 0px;
-    display: none;
-}
 
 /********************************************MEDIA QUERIES [TABLETS]**********************************/
 @media screen and (min-width:500px)  and (max-width:991px){
@@ -394,7 +285,7 @@ a{
     margin-bottom: -6%;
     margin-left: 0%;
     text-align: center;
-}
+  }
 
     .head{
         width: 98%;
@@ -415,55 +306,49 @@ a{
     }
 
     .text-2{
-        margin-top: 10%;
+        padding-top: 10%;
         height: 50vh;
-        padding: 3%;
-      
     }
 
     .about-2{
-        width: auto;
+        width: fit-content;
         padding:.6%;
+        bottom: 50px;
     }
-
-    .wrapper .border{
-        width: 71%;
-        margin-bottom: -20%;
-        height: .2%;
+    .image-2 .text-2{
+        border: 1px solid red;
+        width: 95vw;
     }
-
-    .footer-wrapper{
-        margin-top: 30%;
-        position: relative;
-        width: 70%;
-        padding-top: 5%;  
-        margin-left: 18%;     
-    }
-
-    .wrapper{
-        display: block;
-    }
-
-    
-.location{
-     height: 1vh;
-    margin-bottom: -5%;
-}
+   
     
 }
 
 /********************************************MEDIA QUERIES [PHONES]**********************************/
-@media screen and (min-width:360px)  and (max-width:480px){
+@media screen and (min-width:160px)  and (max-width:565px){
     .welcome .about{
-        width: 30%;
+        width: 100%;
         padding:.6%;
     }
-
+    
+    .image-2{
+        padding: 10px;
+        /* border: 1px solid red; */
+        height: 80vh;
+        position: relative;
+    }
+    .text-2{
+        /* border: 1px solid red; */
+        font-size: 13px;
+        /* padding: 10px; */
+        /* height: inherit; */
+    }
     .about-2{
         width: 30%;
         padding:.6%;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
     }
-
     .head, .image-2{
         height: 60vh;
     }
@@ -483,51 +368,17 @@ a{
     .text-2 .about-2{
         margin-top: 12%;
     }
+
+    /* .about-2{
+        width: 300px;
+        padding:.6%;
+        bottom: 50px;
+    } */
 }
 
 @media screen and (min-width:481px)  and (max-width:1700px){
     
     .welcome h2{
         margin-top: 19%;
-    }
-}
-
-@media screen and (min-width:300px)  and (max-width:770px){
-
-    .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
-        width: 100%;
-        padding: 0px;
-        display: block;
-        background-color: black;
-    }
-    .accordion-body p a{
-        color: white;  
-        padding-left:4%;
-        padding: 2%; 
-    }
-
-    .accordion-button{
-        padding: 2%;
-    }
-
-    .accordion{
-        height: 50vh;
-
-    }
-
-    .wrapper{
-        display: none;
-    }
-
-    .wrapper .links{
-        color: white;
-        font-size: 75%;
-        text-decoration: none;
-        z-index: 39999;
-    }
-    .hed a, .hed{
-        color:rgb(163, 163, 163);
-        font-size: 14px;
-        font-family: 'Homizio', sans-serif;
     }
 }

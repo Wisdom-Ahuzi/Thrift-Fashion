@@ -1,101 +1,21 @@
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-condensed');
-@import url('https://fonts.cdnfonts.com/css/homizio');
-@import"./cards.css";
-@import"./sider.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 *{
     box-sizing: border-box;
-    font-family: "Proxima Nova Condensed";
     scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    transition: all .3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
 }
 
-/* **************************************** NAVIGATION BAR*****************************************88 */
-#logo{
-    font-size: 35px;
-}
-
-#navbarSupportedContent{
-    margin-left: 100px;
-}
-
-li{
-    padding-right: 2.8rem;
-}
-
-
-#heart{
-    padding-top: 12px;
-    font-size: 17px;
-    padding-left: 30px;
-    color: gray;
-}
-
-
-#cart{
-    padding-left: 33px;
-    padding-top: 12px;
-    font-size: 17px;
-    color: gray;
-}
-
-/* ************************************************************** */
-
-li #activa{
-    font-size: 20px;
-    
-}
-
-
-li #activa::after{
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-color: rgb(49, 48, 48);
-    border-radius: 20px;
-    position: absolute;
-    top: 92%;
-    left: 0px;
-}
-
-
-#nav-content{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
-.selectee a{
-    position: relative;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    padding: 10px 0px;
-}
-
-.selectee a::after{
-    content: '';
-    width: 0%;
-    height: 3px;
-    background-color: rgb(49, 48, 48);
-    border-radius: 20px;
-    position: absolute;
-    top: 92%;
-    left: 0px;
-    transition: .5s;
-}
-
-.selectee a:hover::after{
-    width: 100%;
-}
 
 /*********************************IMAGE HEADER************************************/
 #image-header{
     display: flex;
-    width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -107,6 +27,8 @@ li #activa::after{
     color: rgb(203, 201, 201);
     transition: 1s ease-in; 
     margin-bottom: 10%;
+    position: relative;
+    width: 100%;
 }
 
 #image-header:hover{
@@ -117,13 +39,14 @@ li #activa::after{
 
 
 #image-header p{
-    text-align: center;
-    width: 40%;
+    width: 50%;
     font-size: 125%;
 }
 
-
-
+#image-header h3{
+    width: 50%;
+    text-align: left;
+}
 
 
 /******************************************SECTION TWO************************************/
@@ -144,13 +67,14 @@ li #activa::after{
     font-size: 213%;
      max-height: 20vh;
      margin-bottom: 1.5%; 
-
+    color: black;
 }
 
 .section-two p{
     font-size: 122%;
     line-height: 172%; 
     width: 60%;
+    color: black;
 }
 
 
@@ -168,7 +92,7 @@ li #activa::after{
 }
 
 #section-three .image-three{
-    background-image:url(https://media.istockphoto.com/photos/stack-of-hands-unity-and-teamwork-concept-picture-id1174511028?k=20&m=1174511028&s=612x612&w=0&h=Nx7oN2s0bb9vjV_5VU6uLyhd6LeRVs3dJRSnD5lYXJ0=) ;
+    background-image:url(../images/jeremy-bishop-cEeEtjedNls-unsplash.jpg) ;
     background-color: rgb(180, 180, 180);
     background-size: cover;
     width: 50%;
@@ -191,11 +115,13 @@ li #activa::after{
     font-size: 132%;
     padding-bottom: 2%;
     position: relative;
+    color: black;
 }
 
 #section-three .text-three h1{
     font-size: 179%;
     padding-bottom: 2%;
+    color: black;
 }
 
 /*********************************SECTION FOUR**************************************/
@@ -212,7 +138,7 @@ li #activa::after{
 }
 
 #section-four .image-four{    
-    background-image:url(https://media.istockphoto.com/photos/freedom-picture-id492081156?k=20&m=492081156&s=612x612&w=0&h=aFmJsbDPaJbePSuF0Ne3lKLYoGmd176fPwQsydDoKX4=) ;
+    background-image:url(../images/shttefan-mtu6m_nLFQI-unsplash.jpg) ;
     background-color: rgb(180, 180, 180);
     background-size: cover;
     width: 50%;
@@ -236,6 +162,7 @@ li #activa::after{
     font-size: 132%;
     padding-bottom: 2%;
     position: relative;
+    color: black;
 }
 
 #section-four .text-four h1{
@@ -258,11 +185,10 @@ li #activa::after{
 .words-picture h2{
     margin-left: -49%;
     padding-bottom: 3%;
-    font-family: 'Homizio', sans-serif;
 }
 
 .words-picture #picture{
-    background-image: url(https://media.istockphoto.com/photos/leadership-concept-with-paper-airplanes-picture-id1132930101?k=20&m=1132930101&s=612x612&w=0&h=GlnmIlE5FfMvk8KDfFj9X4yJKcibnLpbpMw-RhJ8d98=);
+    background-image: url(../images/ashim-d-silva-WeYamle9fDM-unsplash.jpg);
     background-color: rgb(180, 180, 180);
     background-size: cover;
     width: 50%;
@@ -295,11 +221,10 @@ li #activa::after{
 .wordstwo-picture h2{
     margin-left: -49%;
     padding-bottom: 3%;
-    font-family: 'Homizio', sans-serif;
  }
 
 .wordstwo-picture #picturetwo{
-    background-image: url(https://images.unsplash.com/photo-1455849318743-b2233052fcff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cHVycG9zZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60);
+    background-image: url(../images/biel-morro-_l8ZdgJ9m7w-unsplash.jpg);
     background-color: rgb(180, 180, 180);
     background-size: cover;
     width: 50%;
@@ -328,88 +253,6 @@ li #activa::after{
 
 
 
-/* ******************************************FOOTER SECTION******************************************************/
-.wrapper{
-    position: relative;
-    background-color: black;
-    color: white;
-    display: flex;
-    width: 100%;
-    height: 60vh;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Homizio', sans-serif;
-    flex-direction: column;
-}
-
-.wrapper .links{
-    color: rgb(180, 180, 180);
-    /* margin-top: 5rem; */
-    font-size: 75%;
-    text-decoration: none;
-}
-
-.wrapper .links:hover{
-    color: white;
-}
-
-.wrapper .border{
-    width: 71%;
-    background-color: white;
-    height: .2vh;
-    border-radius: 3px;
-    margin-bottom: 0%;
-    margin-top: 7%;
-}
-
-.footer-wrapper{
-    text-align: center;
-    margin-top: 0px;
-    position: relative;
-    width: 70%;
-    padding-top: 3%;
-    display: grid;
-    grid-template-columns: repeat(5, .3fr);
-    grid-row-gap: 8%;
-    padding-bottom: 12%;
-}
-
-.hed a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 83%;
-    font-family: 'Homizio', sans-serif;
-
-}
-
-
-.location{
-    display: flex; 
-    width: 100%;
-     height: 10vh; 
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 85%;    
-    text-align: center;
-}
- 
-
-
-#span{
-    border-right: 2px solid white;
-    padding-left: 2px;
-    margin-right: 3px;
-}
-
-.accordion{
-    width: 100%;
-    padding: 0px;
-    display: none;
-}
-
-
 /********************************************MEDIA QUERIES [TABLETS]**********************************/
 @media screen and (min-width:500px)  and (max-width:991px){
 
@@ -429,7 +272,7 @@ li #activa::after{
     
     .location{
      height: 1vh;
-    margin-bottom: -5%;
+     margin-bottom: -5%;
     }
 
     .section-two{
@@ -439,22 +282,21 @@ li #activa::after{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        
     }
     
     .section-two h2{
-         margin-top: -13%; 
-        width: 60%;
+        margin-top: -13%; 
+        width: 90%;
         text-align: left;
         font-size: 200%;
-         max-height: 20vh;
-         margin-bottom: 1.5%;     
+        max-height: 20vh;
+        margin-bottom: 1.5%;     
     }
     
     .section-two p{
         font-size: 110%;
         line-height: 152%; 
-        width: 60%;
+        width: 90%;
     }
 
     #image-header p{
@@ -462,6 +304,23 @@ li #activa::after{
         width: 75%;
         font-size: 115%;
     }
+
+    #section-three{
+        flex-direction: column;
+        background-color: whitesmoke;
+        margin-top: unset;
+        margin-bottom: unset; 
+    }
+
+    #section-three .image-three{
+        width: 90%;   
+    }
+    
+    #section-three .text-three{
+        width: 90%;
+        padding-left: 0%;
+    }
+    
 
     #section-three .text-three h1{
         font-size: 159%;
@@ -472,21 +331,93 @@ li #activa::after{
         font-size: 159%;
         padding-bottom: 2%;
     }
-}
-@media screen and (min-width:360px)  and (max-width:599px){
+
+
+
+
+    #section-four{
+        background-color: saddlebrown;
+        flex-direction: column-reverse;
+        background-color: whitesmoke;
+        margin-top: unset;
+        margin-bottom: unset; 
+    }
+
+    #section-four .image-four{
+        width: 90%;   
+    }
+
+    #section-four .text-four{
+        width: 90%;
+        padding-left: 0%;
+    }
+
+
+
+
+
+/************************************COLUMN TWO WORDS AND PICTURES********************************/
+    .wordstwo-picture{
+        width: 100%;
+        margin-top: 5%;
+        text-align: unset;
+    }
+
+    .wordstwo-picture h2{
+        margin-left: 0%;
+        padding-bottom: 3%;
+        color:black;
+    }
+
+    .wordstwo-picture #picturetwo{
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .wordstwo-picture .columntwo-words{
+        width: 90%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .words-picture{
+        width: 100%;
+        margin-top: 5%;
+        text-align: unset;
+    }
+
+    .words-picture h2{
+        margin-left: 0%;
+        padding-bottom: 3%;
+        color:black;
+    }
+
+    .words-picture #picture{
+        width: 90%;
+        margin-left: 0%;
+    }
+
+    .words-picture .column-words{
+        width: 90%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+
+  }
+@media screen and (min-width:300px)  and (max-width:599px){
     #purpose{
         margin-top: 20%;
-    
     }
 
     #section-three .image-three,#section-three .text-three{
         height: 40vh;
         width: inherit;
-        margin-bottom: -30%;
+        margin-bottom: 0%;
     }
 
     #section-four .image-four,#section-four .text-four{
-        margin-top: -30%;
+        margin-top: 0%;
         height: 40vh;
         width: inherit;
     }
@@ -511,50 +442,115 @@ li #activa::after{
     #image-header{
         height: 50vh;
     }
-  
-}
 
-@media screen and (min-width:300px)  and (max-width:770px){
-
-    .accordion-item{
-        margin-top: 10%;
+    #section-three{
+        flex-direction: column;
+        background-color: whitesmoke;
+        margin-top: unset;
+        margin-bottom: unset; 
     }
 
-    .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
+    #section-three .image-three{
+        width: 90%;   
+    }
+    
+    #section-three .text-three{
+        width: 90%;
+        padding-left: 0%;
+    }
+
+
+    #section-four{
+        flex-direction: column-reverse;
+        background-color: whitesmoke;
+        margin-top: unset;
+        margin-bottom: unset; 
+    }
+
+    #section-four .image-four{
+        width: 90%; 
+    }
+
+    #section-four .text-four{
+        width: 90%;
+        padding-left: 0%;
+    }
+
+
+
+
+
+
+    /************************************COLUMN TWO WORDS AND PICTURES********************************/
+    .wordstwo-picture{
         width: 100%;
-        padding: 0px;
-        display: block;
-        background-color: black;
+        margin-top: 5%;
+        text-align: unset;
     }
 
-    .accordion-body p a{
-        color: white;  
-        padding-left:4%;
-        padding: 2%; 
+    .wordstwo-picture h2{
+        margin-left: 0%;
+        padding-bottom: 3%;
+        color:black;
     }
 
-    .accordion-button{
-        padding: 2%;
+    .wordstwo-picture #picturetwo{
+        width: 90%;
+        margin-left: 0%;
     }
 
-    .accordion{
-        height: 33vh;
-
+    .wordstwo-picture .columntwo-words{
+        width: 90%;
+        text-align: center;
+        margin-left: 0%;
     }
 
-    .wrapper{
-        display: none;
+    .words-picture{
+        width: 100%;
+        margin-top: 5%;
+        text-align: unset;
     }
 
-    .wrapper .links{
-        color: white;
-        font-size: 75%;
-        text-decoration: none;
-        z-index: 39999;
+    .words-picture h2{
+        margin-left: 0%;
+        padding-bottom: 3%;
+        color:black;
     }
-    .hed a, .hed{
-        color:rgb(163, 163, 163);
-        font-size: 14px;
-        font-family: 'Homizio', sans-serif;
+
+    .words-picture #picture{
+        width: 90%;
+        margin-left: 0%;
     }
+
+    .words-picture .column-words{
+        width: 90%;
+        text-align: center;
+        margin-left: 0%;
+    }
+
+
+    .section-two{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .section-two h2{
+        margin-top: -13%; 
+        width: 90%;
+        text-align: left;
+        font-size: 200%;
+        max-height: 20vh;
+        margin-bottom: 1.5%;     
+    }
+    
+    .section-two p{
+        font-size: 110%;
+        line-height: 152%; 
+        width: 90%;
+    }
+  
 }
