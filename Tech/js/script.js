@@ -1,8 +1,4 @@
-
-
-
-
-const items = document.querySelectorAll('.nav-link')
+const items = document.querySelectorAll('.nav-link');
 
 items.forEach((item, index) =>  {
     item.addEventListener('click', e => {
@@ -18,7 +14,6 @@ items.forEach((item, index) =>  {
 
     }else {
         // item.classList.remove("active")
-
     }
 });});
 
@@ -103,7 +98,6 @@ let oner = one.innerText;
 let vas = parseInt(oner);
 
 
-console.log(carts);
 
 
 carts.forEach((car) => {
@@ -113,7 +107,6 @@ carts.forEach((car) => {
 
     carr.addEventListener('click', (e) => {
 
-      console.log('clicked');
 
         one.classList.add('show')
 
@@ -148,7 +141,6 @@ carts.forEach((car) => {
         const cartUl = document.querySelector('.cartul');
 
         const cartList = document.createElement('li');
-        console.log(cartList);
 
         cartList.innerHTML = `
         <li class="list-group-item d-flex  justify-content-between lh-sm nn">
@@ -165,7 +157,6 @@ carts.forEach((car) => {
         `
         cartUl.appendChild(cartList);
 
-        console.log(cartUl);
         sum.innerHTML = parseInt(sum.innerHTML) + parseInt(parentPrice.replace("$", ""));
 
         const del = document.querySelectorAll('.del');
@@ -336,10 +327,7 @@ ticker.addEventListener('click', (e) => {
   
     const success = (position) => {
       const latitude = position.coords.latitude;
-      const longitude = position.coords.longitude;
-      console.log('latitude: ', latitude);
-      console.log('longitude: ', longitude);
-  
+      const longitude = position.coords.longitude;  
       const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage*en`;
   
   
