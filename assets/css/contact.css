@@ -85,10 +85,43 @@ form .wide{
     margin-top: 10%;
 }
 
+@media screen and (max-width:768px) {
+    .about{
+        width: 100% !important;
+        font-size: 22px !important;
+        padding: 12px !important;
+        margin-top: 0px !important;
+    }
+
+    .gaa{
+        width: 100% !important;
+    }
+
+    .wide{
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+
+    .wide-2{
+        width: 100% !important;
+        margin: 0px !important;
+        padding: 15px;
+    }
+
+    .feedback{
+        padding-bottom: 0px;
+        height: 700px !important;
+    }
+
+    #contact{
+        padding-left: 5%;
+    }
+}
+
 .about{
     bottom: 1%;
     position: absolute;
-    
     margin-top: 22%;
     text-align: center;
     width: 20%;
@@ -170,7 +203,6 @@ a{
         width: 100%;
         margin-left: 10%;
         position: relative;
-        bottom: 7%;
     }
     
     .feedback #former #para{
@@ -179,15 +211,15 @@ a{
     }
 
     #area-two, #area-one, #area-three{
-        display: none;
+        display: flex;
     }
     
     .feedback #former{
         width: 100%;
         margin-top: 5%;
         margin-left: 5%;
-        margin-bottom: 30%;
-        
+        margin-bottom: 5%;
+        /* Important */
     }
     
     .wrapper{
@@ -213,51 +245,6 @@ a{
         margin-left: 4%;
     }
     
-}
-
-@media screen and (min-width:300px)  and (max-width:770px){
-
-    .accordion{
-        margin-top: 60%;
-    }
-
-    .accordion, .accordion-item, .accordion-body, .accordion-header, .accordion-button{
-        width: 100%;
-        padding: 0px;
-        display: block;
-        background-color: black;
-    }
-
-
-    .accordion-body p a{
-        color: white;  
-        padding-left:4%;
-        padding: 2%; 
-    }
-
-    .accordion-button{
-        padding: 2%;
-    }
-
-    .accordion{
-        height: 33vh;
-
-    }
-
-    .wrapper{
-        display: none;
-    }
-
-    .wrapper .links{
-        color: white;
-        font-size: 75%;
-        text-decoration: none;
-        z-index: 39999;
-    }
-    .hed a, .hed{
-        color:rgb(163, 163, 163);
-        font-size: 14px;
-    }
 }
 
 

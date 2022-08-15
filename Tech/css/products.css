@@ -36,11 +36,17 @@
     color: gray;
 }
 
-.nav-img{
-    width: 30px;
-    height: 30px;
-    color: gray;
+@media screen and (max-width: 1000px) {
+    .card-text{
+        font-size: 14px !important;
+    }
+
+    .product-name{
+        font-size: 16px !important;
+    }
 }
+
+
 
 .one{
     width: 20px;
@@ -57,6 +63,7 @@
 li{
     list-style-type:none !important;
 }
+
 
 .cart-icon:hover{
     background-color: red !important;
@@ -111,8 +118,8 @@ li{
 }
 
 .nav-img{
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     color: rgb(213, 79, 79);
     /* margin-right: 15px; */
     margin-left: 15px;
@@ -129,6 +136,25 @@ li{
 .nav-img-person-ser{
     width: 25px;
     height: 25px;
+}
+
+@media screen and (max-width:768px) {
+    .nav-edge{
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        align-items: center;
+        padding-right: 5%;
+    }
+
+    .contact-end{
+        margin-bottom: 42px;
+    }
+
+    .links{
+        width: 100%;
+    }
+
 }
 
 .nav-edge{
@@ -149,7 +175,7 @@ li{
     background-color: rgb(213, 79, 79);
     border-radius: 50%;
     position: absolute;
-    right: 0;
+    right: -6px;
 }
 
 li{
@@ -224,7 +250,6 @@ strong{
 
 
 .ticker {
-    /* position: absolute; */
     background-color: rgb(213, 79, 79);
     border: 2px solid transparent;
     width: 40px;
@@ -237,6 +262,23 @@ strong{
     margin-top: 200px;
 }
 
+    @media screen and (max-width:995px) {
+        .dateTimeLocCover {
+            border: 1px solid tr;
+            width: 12rem;
+            position: fixed;
+            background-color: white;
+            z-index: 200;
+            right: 1vw;
+            bottom: 70px !important;
+            display: none;
+            height: 200px;
+          }
+
+          .location {
+            border: 1px solid transparent !important;
+          }
+    }
   
   .dateTimeLocCover {
     border: 1px solid #c5c4c4;
@@ -292,3 +334,5 @@ strong{
     display: block !important;
   }
 
+
+  

@@ -1,4 +1,11 @@
 /*  */
+
+@media screen and (max-width:1000px) {
+    .Footer{
+        margin-top: 60vh;
+    }
+}
+
 /* Responsiveness For Footer */
 @media screen  and (min-width:901px)  and (max-width:1000px){
     .inner-footer {

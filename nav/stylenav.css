@@ -92,7 +92,7 @@ nav .fa-eye{
 form .search{
     border-radius: 50px 0 0 50px;
     border: 0px;
-    box-shadow: 1px 1px 5px rgb(63, 63, 63);
+    box-shadow: 1px 1px 5px rgb(141, 137, 137);
     padding: 12px;
 }
 form .search-icon{
@@ -112,6 +112,8 @@ form .search-icon:hover{
     /* background: rgb(1, 190, 127); */
     background: rgb(214, 112, 112);
 }
+
+
 
 
 
@@ -154,5 +156,12 @@ form .search-icon:hover{
     }
     nav .person .userName{
         font-size: 13px;
+    }
+}
+
+
+@media only screen and (min-width:768px) and (max-width: 850px){
+    nav .links .nav-item a.nav-link{
+        font-size: 13px !important;
     }
 }

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thrift Fashion</title>
     <link rel="stylesheet" href="./assets/css/home.css">
-    <link rel="stylesheet" href="./bootstrap-5.0.0-beta2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./image/thrift logo.png">
     <link rel="stylesheet" href="./nav/stylenav.css">
     <link rel="stylesheet" href="./nav/nameCollect.css">
@@ -34,7 +35,7 @@
             <input type="text" required="true" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
             <label for="floatingInput">Enter your first name</label>
           </div>
-          <button class="w-100 mb-2 btn btn-lg rounded-4 btn- checkout-to" type="submit">Get started</button>
+          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-danger checkout-to" type="submit">Get started</button>
           <small class="nameInfo">For a better personalized experience.</small>
           <hr class="my-4">
           <h2 class="fs-6 fw-bold mb-3" style="color: black; text-align: right;">&copy; 2022</h2>
@@ -56,10 +57,10 @@
 
 
 <!-- DATE, TIME AND LOCATION -->
-<div class="list-group dateTimeLocCover bg-danger" data-aos="fade-up">
+<div class="list-group dateTimeLocCover bg-">
   <div class="text-center list-group-item py-3 mb-0 date">Date</div>
   <div class="text-center list-group-item py-3 mb-0 time">Time</div>
-  <div class="text-center list-group-item py-3 mb-0 location">Location</div>
+  <div class="text-center list-group-item py-3 mb-0 location"> <i class="fa-solid fa-location-dot"></i> Location</div>
 </div>
 
 <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light ">
@@ -80,7 +81,7 @@
                 <a class="nav-link "  href="#about-index">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link "  href="#contact-index">Contact Us</a>
+                <a class="nav-link contact-end"  href="#contact-index">Contact Us</a>
               </li>
           </ul>
           <form class="d-flex nav-edge searchForm">
@@ -162,9 +163,9 @@
     <div id="text-1" data-aos="fade-up" class="row row-cols-1 row-cols-md-3 g-4">    
       <div class="col">
         <div class="card  hoverer h-90 w-90">
-          <a href="#shop-men" ><img src="./image/mohamad-khosravi-Uw3OfKz2J-0-unsplash.jpg" width="100%" height="100%" class="card-img-top" alt="..."></a>
+          <a href="#men" ><img src="./image/mohamad-khosravi-Uw3OfKz2J-0-unsplash.jpg" width="100%" height="100%" class="card-img-top" alt="..."></a>
           <div class="card-body">
-            <a  class="activee1" href="#shop-men">
+            <a  class="activee1" href="#men">
               <h5 style="text-align: center;" class="card-title">MEN</h5>            
             </a>
           </div>
@@ -173,9 +174,9 @@
       </div>  
       <div class="col">
         <div class="card hoverer  h-90 w-90">
-          <a href="#shop-women"><img src="./image/corey-saldana-pIKQbdSzF_k-unsplash.jpg" width="100%" height="100%" class="card-img-top" alt="..."></a>
+          <a href="#women"><img src="./image/corey-saldana-pIKQbdSzF_k-unsplash.jpg" width="100%" height="100%" class="card-img-top" alt="..."></a>
           <div class="card-body">
-            <a href="#shop-women" class="activee1">
+            <a href="#women" class="activee1">
             <h5 style="text-align: center;" class="card-title">WOMEN</h5>
             </a>
           </div>        
@@ -183,9 +184,9 @@
       </div>
       <div class="col" >
         <div class="card hoverer  h-90 w-90">
-          <a href="#shop-kids" ><img src="./image/sourav-ahmmad-fwJMG9zm3dI-unsplash.jpg" width="100%" height="100%" class="card-img-top" alt="..."></a>
+          <a href="#kids" ><img src="./image/sourav-ahmmad-fwJMG9zm3dI-unsplash.jpg" width="100%" height="100%" class="card-img-top" alt="..."></a>
           <div class="card-body"> 
-            <a href="#shop-kids" class="activee1">
+            <a href="#kids" class="activee1">
             <h5 style="text-align: center;" class="card-title">KIDS</h5>
           </a>
           </div>        
@@ -200,24 +201,24 @@
     
     <div class="head">
       <div class="welcome">
-        <h2> Thrifting Is More Than Just Shopping, <br> It's Everyday Adventure. </h2> 
+        <h2 data-aos="fade-right"> Thrifting Is More Than Just Shopping, <br> It's Everyday Adventure. </h2> 
       </div>
     </div>
     
     
     <!--------------------------------------------------------TWO CARDS---------------------------------------------------- -->
-    <div class="texter-1">
+    <div class="texter-1" id="popu">
       <p>Popular Right Now  </p>
     </div>  
-    <div id="two-cards"  class="row row-cols-1 row-cols-md-2 g-4 ">
+    <div id="two-cards"  class="row row-cols-1 row-cols-md-2 g-4 " data-aos="fade-up">
       <div class="col" >
         <div class="card hoverer-two ">
-          <a href="#shop-women"><img src="./image/women cloth 5.jpg" class="card-img-top" alt="...">
+          <a href="#women"><img src="./image/women cloth 5.jpg" class="card-img-top" alt="...">
           </a>
           <div class="card-body">
-            <a href="#shop-women" class="activee2">
-            <h5 class="card-title" class="activee2">Womens Workout Essentials</h5>
-            <p class="card-text"><a href="#" class="activee2">Shop Now</a></p>
+            <a href="#women" class="activee2">
+            <h5 class="card-title" class="activee2">Womens Dri fit</h5>
+            <p class="card-text"><a href="#women" class="activee2">Shop Now</a></p>
             </a>
           </div>
         </div>
@@ -225,11 +226,11 @@
     
       <div class="col" >
         <div class="card hoverer-two">
-          <a href="#shop-men"><img src="./image/child cloth 4.jpg" class="card-img-top" alt="..."></a>
+          <a href="#kids"><img src="./image/child cloth 4.jpg" class="card-img-top" alt="..."></a>
           <div class="card-body">
-          <a href="#shop-men" class="activee2">
-            <h5 class="card-title" class="activee2">Mens Workout Essentials</h5>
-            <p class="card-text"><a href="./men_sales.html#polos" class="activee2">Shop Now</a></p>
+          <a href="#kids" class="activee2">
+            <h5 class="card-title" class="activee2">Kids Stay Home Wear</h5>
+            <p class="card-text"><a href="#kids" class="activee2">Shop Now</a></p>
           </a>
           </div>
         </div>
@@ -248,8 +249,8 @@
 
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center head-background">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal text-light">THRIFT FASHION</h1>
-        <p class="lead fw-normal text-light">Thrifted items have been loved by a previous owner, but are usually in good shape with enough life left to be useful to a new owner.</p>
+        <h1 class="display-4 fw-normal text-light" data-aos="zoom-in">THRIFT FASHION</h1>
+        <p class="lead fw-normal text-light" data-aos="zoom-in">Thrifted items have been loved by a previous owner, but are usually in good shape with enough life left to be useful to a new owner.</p>
       </div>
       <div class="product-device shadow-sm d-none d-md-block"></div>
       <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -257,16 +258,16 @@
   
     <div class="album py-5 bg-light">
       <div class="container">
-        <h2 class="text-dark" id="shop-men"> Shop Now!</h2>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 allProducts">
+        <h2 class="text-dark" id="shop-men" data-aos="fade-right"> Shop Now!</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 allProducts" id="men" data-aos="fade-in">
 
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 womenProducts">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 womenProducts" id="women">
 
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 childrenProducts">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 childrenProducts" id="kids">
 
         </div>
       </div>
@@ -298,7 +299,7 @@
                   <p class="btn btn-secondary sum"> <small>&#8358;</small> <small>0</small> </p>
               </div>
             </form>
-            <button class="w-100 btn btn- btn-lg mt-4 checkout-to" type="submit"><a href="#paymentCheckout" class="text-light"> Continue to checkout </a></button>
+            <button class="w-100 btn btn- btn-lg mt-4 checkout-to btn-danger type="submit"><a href="#paymentCheckout" class="text-light"> Continue to checkout </a></button>
           </div>
           <div class="col-md-7 col-lg-8" id="paymentCheckout">
               <h4 class="mb-3">Billing address</h4>
@@ -429,7 +430,7 @@
       
               <hr class="my-4">
       
-              <button class="w-100 btn btn- checkout-to  checkout-to-sub btn-lg" type="submit">Save and checkout</button>
+              <button class="w-100 btn checkout-to  checkout-to-sub btn-lg btn-danger" type="submit">Save and checkout</button>
               </form>
           </div>
           </div>
@@ -451,9 +452,9 @@
         
     <!------------------------------------------------SECTION TWO----------------------------->
     <div id="about" class="section-two">
-      <h2 >About Thrift Fashion</h2>
-      <p > Thrift fashion strives to be Earth's most customer-centric company, Earth's best employer, and Earth's safest place to work. Customer reviews, 1-Click shopping, personalized recommendations and so on are just some of our attributes. </p>
-      <p id="diff"  >Thrift fashion is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.</p>  
+      <h2 data-aos="fade-right">About Thrift Fashion</h2>
+      <p data-aos="fade-right"> Thrift fashion strives to be Earth's most customer-centric company, Earth's best employer, and Earth's safest place to work. Customer reviews, 1-Click shopping, personalized recommendations and so on are just some of our attributes. </p>
+      <p id="diff"  data-aos="fade-right" >Thrift fashion is guided by four principles: customer obsession rather than competitor focus, passion for invention, commitment to operational excellence, and long-term thinking.</p>  
     </div>
         
         
@@ -465,11 +466,11 @@
       </div>
   
       <div class="text-three">
-        <h2   >INNOVATIONS</h2>
+        <h2 data-aos="fade-left"  >INNOVATIONS</h2>
   
-        <h1   >WE DARE TO DESIGN THE FUTURE OF SPORTS</h1>
+        <h1 data-aos="fade-left">WE DARE TO DESIGN THE FUTURE OF SPORTS</h1>
   
-        <P >Thrift fashion aimed wide with their mission statement, proving that not all mission statements have to be tailored specifically to what a company does.</P>
+        <P data-aos="fade-left">Thrift fashion aimed wide with their mission statement, proving that not all mission statements have to be tailored specifically to what a company does.</P>
       </div>
     </div>
                 
@@ -477,11 +478,11 @@
     <!--------------------------------------------SECTION FOUR----------------------------------------------->
     <div id="section-four">
       <div class="text-four">
-        <h2>OUR TEAM</h2>
+        <h2 data-aos="fade-right">OUR TEAM</h2>
   
-        <h1>A TEAM THAT'S EMPOWERED, DIVERSE AND INCLUSIVE</h1>
+        <h1 data-aos="fade-right">A TEAM THAT'S EMPOWERED, DIVERSE AND INCLUSIVE</h1>
   
-        <P>This inspirational statement focuses on their audience, creating an immediate connection with readers, which isn't surprising considering their history of creative and personal marketing dedicated to “bringing humanity back to air travel,” .</P>
+        <P data-aos="fade-right">This inspirational statement focuses on their audience, creating an immediate connection with readers, which isn't surprising considering their history of creative and personal marketing dedicated to “bringing humanity back to air travel,” .</P>
       </div>
   
       <div class="image-four">
@@ -531,8 +532,8 @@
       <!-------------------------------------CONTACT US IMAGE----------------------------------------------->
       <div class="imager" >
       <div class="holder">
-          <h2>Contact Us</h2>
-      <p>GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+        <p>GET IN TOUCH</p>
       </div>
       </div>
   
@@ -553,10 +554,10 @@
       <h3>FEEDBACK FORM</h3>
       <form class="row g-3 "  >
         <div class="col-md-3">
-          <input type="text" class="form-control gaa" placeholder="FirstName" aria-label='First name' >
+          <input type="text" class="form-control gaa wide-2" placeholder="FirstName" aria-label='First name' >
         </div>
         <div class="col-md-3">
-          <input type="text" class="form-control gaa" placeholder="LastName" aria-label='Last name' >
+          <input type="text" class="form-control gaa wide-2" placeholder="LastName" aria-label='Last name' >
   
         </div>
   
@@ -591,12 +592,12 @@
   
       <div id="contact">
       <h3>Contact Info</h3>
-      <p> <span class="fas fa-house-user"> Quarry Road, Old Savannah Bank Building,Abeokuta, Ogun State, Nigeria </p>
+      <p> <span class="fas fa-house-user"> </span> Quarry Road, Old Savannah Bank Building,Abeokuta, Ogun State, Nigeria </p>
       <p><a href="mailto:sixtusnwaogu@gmail.com">  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " width="30" height="30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-      </svg></span><span class="fas fa-mail-bulk"></span> aptech.abeokuta@gmail.com</a></p>
-      <p> <span class="fab fa-whatsapp-square"></span> <a href="https://web.whatsapp.com/">08037217003</a></p>
-      <p> <span class=" fas fa-phone-alt"></span> <a href="tel: 09018838623">08034152557</a> </p>
+      </svg></span> aptech.abeokuta@gmail.com</a></p>
+      <p> <span class="fab fa-whatsapp-square"></span> <a href="https://web.whatsapp.com/" target="_blank">09018838623</a></p>
+      <p> <span class=" fas fa-phone-alt"></span> <a href="tel: 07037217011" target="_blank">07037217011</a></p>
       </div>
       </div>
   
@@ -633,44 +634,44 @@
         <div class="first-insight">
             <p>Features</p>
             <div class="inner-first-insight">
-                <span> <a href="#about-index"> About </a> </span>
+                <span> <a href="#popu"> Popular </a> </span>
                 <span> <a href="#contact-index"> Contact us </a> </span>
                 <span> <a href="#product-index"> Products </a> </span>
-                <span> <a href=""> Log In </a> </span>
+                <span> <a href="#checkout"> Your Cart </a> </span>
             </div>
         </div>
 
         <div class="second-insight">
             <p>Resources</p>
                 <div class="inner-second-insight">
-                    <span> <a href=""> Blog </a> </span>
-                    <span> <a href=""> Developers </a> </span>
-                    <span> <a href=""> Support </a> </span>
+                    <span> <a href="https://github.blog/" target="_blank"> Blog </a> </span>
+                    <span> <a href="https://github.com/Wizzy-05" target="_blank"> Developers </a> </span>
+                    <span> <a href="https://support.github.com/" target="_blank"> Support </a> </span>
                 </div>
         </div>
 
         <div class="third-insight">
             <p>Company</p>
                 <div class="inner-third-insight">
-                    <span> <a href=""> About </a> </span>
-                    <span> <a href=""> Contact us </a> </span>
-                    <span> <a href=""> Our Team </a> </span>
-                    <span> <a href=""> Careers </a> </span>
+                    <span> <a href="#about-index"> About </a> </span>
+                    <span> <a href="#contact-index"> Contact us </a> </span>
+                    <span> <a href="#section-four"> Our Team </a> </span>
+                    <span> <a href="#mission"> Our Mission </a> </span>
                 </div>
         </div>
 
         <div class="social-handles">
-            <span> <a href="https://web.facebook.com/profile.php?id=100076550725824"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg> </a> </span>
-            <span> <a href="https://www.instagram.com/ahuziwisdom/"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> </a> </span>
-            <span> <a href="https://twitter.com/ahuzi_wisdom"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/></svg> </a> </span>
-            <span> <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="30" height="25"><path fill="#FFF" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg></a></span>
+            <span> <a href="https://web.facebook.com/profile.php?id=100076550725824" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"/></svg> </a> </span>
+            <span> <a href="https://www.instagram.com/ahuziwisdom/" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path fill="#FFF" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg> </a> </span>
+            <span> <a href="https://twitter.com/ahuzi_wisdom" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20"><path fill="#FFF" d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"/></svg> </a> </span>
+            <span> <a href="https://web.telegram.org/z/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" width="30" height="25"><path fill="#FFF" d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/></svg></a></span>
           </div>
     </div>
 </div>
 </div>
 
         
-<script src="./bootstrap-5.0.0-beta2-dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="./nav/nameCollect.js"></script>
 <script src="./Tech/js/script.js"></script>

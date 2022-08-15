@@ -185,6 +185,7 @@ body{
 .words-picture h2{
     margin-left: -49%;
     padding-bottom: 3%;
+    color: black;
 }
 
 .words-picture #picture{
@@ -221,6 +222,7 @@ body{
 .wordstwo-picture h2{
     margin-left: -49%;
     padding-bottom: 3%;
+    color: black;
  }
 
 .wordstwo-picture #picturetwo{
@@ -553,4 +555,13 @@ body{
         width: 90%;
     }
   
+}
+
+@media screen and (max-width:400px) {
+    .section-two p{
+        font-size: 110%;
+        line-height: 152%; 
+        width: 90%;
+        text-align: center;
+    }
 }
