@@ -86,7 +86,7 @@ const fetchAll = async ()=> {
   await handleFetch();
   await handleWomen();
   await handleKids();
-
+  
 }
 
 fetchAll().then(() => {
